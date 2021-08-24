@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/linearmain">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linear1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text1"
+                    android:text="Send money to mobile directly from bank"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:drawableTop="@drawable/paytmlogo"
+                    android:gravity="center" />
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:text="Refer and Earn"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:id="@+id/button1"/>
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout2"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
+                android:id="@+id/textpay"
+                android:gravity="center"
+                android:text="Pay"
+                android:textAllCaps="false"
+                android:layout_marginLeft="3dp"
+                android:drawableTop="@drawable/pay"
+                android:onClick="pay"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginRight="3dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
+                android:textAllCaps="false"
+                android:id="@+id/textsendmoney"
+                android:gravity="center"
+                android:text="Send money"
+                android:layout_marginRight="3dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:drawableTop="@drawable/sendmoney"
+                android:onClick="sendMoney"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
+                android:textAllCaps="false"
+                android:id="@+id/textscan"
+                android:gravity="center"
+                android:drawableTop="@drawable/scan"
+                android:text="Scan"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginRight="3dp"
+                android:onClick="scan"/>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Paytm"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_margin="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Balance &amp; History"
+                        android:drawableTop="@drawable/balance"
+                        android:textAllCaps="false"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_margin="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Paytm Bank"
+                        android:drawableTop="@drawable/bank"
+                        android:textAllCaps="false"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_margin="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/wallet"
+                        android:text="Paytm Wallet"
+                        android:textAllCaps="false"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_margin="1dp"
+                        android:drawableTop="@drawable/services"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="All services"
+                        android:textAllCaps="false"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/purple_200">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:textSize="17dp"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:drawableTop="@drawable/cashback"
+                        android:text="Pay Using Paytm and Get Flat rs 15 CashBack"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00D7FE"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:textSize="17dp"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/loan"
+                        android:padding="10dp"
+                        android:text="Personal Loan upto rs 25 lakhs starting at 10.5%"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/purple_200"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:textSize="17dp"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/first"
+                        android:text="Flat rs 100 off on Paytm First Membership"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Recharge &amp; Bill Payments"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_margin="1dp"
+                            android:layout_height="match_parent"
+                            android:text="Mobile Recharge"
+                            android:drawableTop="@drawable/mobile"
+                            android:textAllCaps="false"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/black"/>
+
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_margin="1dp"
+                            android:layout_height="match_parent"
+                            android:text="Electricity Bill"
+                            android:drawableTop="@drawable/electricity"
+                            android:textAllCaps="false"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/black"/>
+
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_margin="1dp"
+                            android:layout_height="match_parent"
+                            android:drawableTop="@drawable/dth"
+                            android:text="DTH Recharge"
+                            android:textAllCaps="false"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/black"/>
+
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_margin="1dp"
+                            android:drawableTop="@drawable/credit"
+                            android:layout_height="match_parent"
+                            android:text="Pay Credit Card Bills"
+                            android:textAllCaps="false"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/black"/>
+
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_margin="1dp"
+                            android:drawableTop="@drawable/rent"
+                            android:layout_height="match_parent"
+                            android:text="Rent of Credit Card"
+                            android:textAllCaps="false"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/black"/>
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_margin="1dp"
+                            android:drawableTop="@drawable/postpaid"
+                            android:layout_height="match_parent"
+                            android:text="Mobile Postpaid"
+                            android:textAllCaps="false"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/black"/>
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_margin="1dp"
+                            android:drawableTop="@drawable/cylinder"
+                            android:layout_height="match_parent"
+                            android:text="Bank Gas Cylinder"
+                            android:textAllCaps="false"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
